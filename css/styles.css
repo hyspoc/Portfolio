@@ -62,9 +62,9 @@
  *      ## portfolio list
  *      ## modal popup
  * # CTA
- * # testimonials
+ * # jokes
  *      ## swiper style overrides
- *      ## testimonial slider
+ *      ## joke slider
  * # contact
  *      ## contact block
  * # footer
@@ -4235,10 +4235,10 @@ Resources
 
 
 /* ===================================================================
- * # testimonials
+ * # jokes
  *
  * ------------------------------------------------------------------- */
-.s-testimonials {
+.s-jokes {
     padding-top: var(--vspace-5);
     padding-bottom: var(--vspace-3_5);
     color: rgba(255, 255, 255, 0.8);
@@ -4247,7 +4247,7 @@ Resources
     position: relative;
 }
 
-.s-testimonials__bg {
+.s-jokes__bg {
     display: block;
     position: absolute;
     top: 0;
@@ -4256,13 +4256,13 @@ Resources
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/testimonials-bg-3000.jpg);
+    background-image: url(../images/jokes-bg-3000.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.s-testimonials__bg::before {
+.s-jokes__bg::before {
     display: block;
     content: "";
     position: absolute;
@@ -4276,21 +4276,25 @@ Resources
     opacity: .8;
 }
 
-.s-testimonials h3 {
+.s-jokes h3 {
     margin-top: 0;
     color: white;
 }
 
-.s-testimonials__header, .s-testimonials__content {
+.s-jokes p {
+    align: center;
+}
+
+.s-jokes__header, .s-jokes__content {
     position: relative;
 }
 
-.s-testimonials__header {
+.s-jokes__header {
     text-align: center;
     margin-bottom: var(--vspace-2);
 }
 
-.s-testimonials__content>.column:first-child {
+.s-jokes__content>.column:first-child {
     min-height: 0;
     min-width: 0;
 }
@@ -4298,45 +4302,45 @@ Resources
 /* -------------------------------------------------------------------
  * ## swiper style overrides
  * ------------------------------------------------------------------- */
-.s-testimonials .swiper-container {
+.s-jokes .swiper-container {
     padding-bottom: var(--vspace-2_5);
 }
 
-.s-testimonials .swiper-container-horizontal .swiper-pagination-bullets .swiper-pagination-bullet {
+.s-jokes .swiper-container-horizontal .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 9px;
 }
 
-.s-testimonials .swiper-pagination-bullet {
+.s-jokes .swiper-pagination-bullet {
     width: 6px;
     height: 6px;
     background: white;
     opacity: 0.4;
 }
 
-.s-testimonials .swiper-pagination-bullet-active {
+.s-jokes .swiper-pagination-bullet-active {
     background: var(--color-1);
     opacity: 1;
 }
 
 /* -------------------------------------------------------------------
- * ## testimonial slider
+ * ## joke slider
  * ------------------------------------------------------------------- */
-.testimonial-slider {
+.joke-slider {
     position: relative;
 }
 
-.testimonial-slider p {
+.joke-slider p {
     font-weight: 400;
     font-size: 1.7rem;
     line-height: var(--vspace-1);
     text-align: center;
 }
 
-.testimonial-slider__slide {
+.joke-slider__slide {
     position: relative;
 }
 
-.testimonial-slider__author {
+.joke-slider__author {
     display: inline-block;
     min-height: var(--vspace-2);
     margin-bottom: var(--vspace-0_5);
@@ -4344,7 +4348,7 @@ Resources
     position: relative;
 }
 
-.testimonial-slider__avatar {
+.joke-slider__avatar {
     width: var(--vspace-2);
     height: var(--vspace-2);
     border-radius: 100%;
@@ -4354,22 +4358,22 @@ Resources
     left: 0;
 }
 
-.testimonial-slider__cite {
+.joke-slider__cite {
     display: block;
 }
 
-.testimonial-slider__cite strong,
-.testimonial-slider__cite span {
+.joke-slider__cite strong,
+.joke-slider__cite span {
     font-style: normal;
 }
 
-.testimonial-slider__cite strong {
+.joke-slider__cite strong {
     font-size: calc(var(--text-size) * 0.944);
     line-height: var(--vspace-0_5);
     color: white;
 }
 
-.testimonial-slider__cite span {
+.joke-slider__cite span {
     display: block;
     font-size: calc(var(--text-size) * 0.778);
     font-weight: 300;
@@ -4379,28 +4383,28 @@ Resources
 
 /* -------------------------------------------------------------------
  * responsive:
- * testimonials
+ * jokes
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
-    .testimonial-slider__slide {
+    .joke-slider__slide {
         text-align: center;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .testimonial-slider__author {
+    .joke-slider__author {
         padding-left: 6.8rem;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .testimonial-slider__author {
+    .joke-slider__author {
         padding-left: 0;
         margin-bottom: var(--vspace-0_5);
         min-height: 0;
         text-align: center;
     }
-    .testimonial-slider__avatar {
+    .joke-slider__avatar {
         display: inline-block !important;
         margin: 0;
         position: static;
